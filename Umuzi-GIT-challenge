@@ -1,0 +1,169 @@
+
+
+YOUR INTIAL COMMIT
+
+mkdir git-basic-excersises
+cd git-basic-excersises
+ls -a
+git init
+ls -a
+git init
+touch README.md
+ls -a
+git status
+git log
+git add README.md
+git status
+git rm --cached README.md
+git status
+git add README.md
+git status
+git commit -m "initial commit"
+git log
+
+ 
+MORE COMMITS
+nano README.md
+cat README.md
+git status
+git add README.md
+git commit -m "second commit"
+echo "I had to learn">> README.md
+git status
+git add README.md
+git commit -m "third commit"
+
+CHECK THIS OUT
+git log
+git checkout 6c5af22af922d3d2d7bfa401b749db59e5111825
+
+cat README.md
+git checkout master
+cat README.md
+
+
+BRANCHING
+git branch
+git branch milkshake-flavours
+git branch
+git check out milkshake-flavours
+nano milkshakes.md
+git status
+
+git add milkshakes.md
+git commit -m "added initial flavours"
+git status
+git log
+
+git check out master
+git branch history
+git checkout history
+git log
+
+history > history.tx
+git add history.txt
+git commit -m "added history"
+git log
+
+git checkout milkshake-flavours
+echo " what is happening now?" >> README.md
+git status 
+
+git add README.md
+git commit -m "random readme changes"
+git checkout history
+cat README.md
+rm README.md
+echo "booya" > README.md
+git commit -m "rewrote readme"	
+
+JUST TO MAKE SURE WE ARE STILLON TRACK
+git checkout master
+ls
+git log
+git checkout milkshake-flavours
+ls
+git log
+git checkout history
+ls
+git log
+
+
+MERGING
+git checkout master
+git merge milkshake-flavours
+ls
+git log
+git add README.md
+git checkout milkshake-flavours
+ls
+git log
+
+git checkout master
+git merge history
+ls
+git log
+
+git checkout history
+git merge master
+ls
+git log
+git checkout master
+ls
+git log
+
+GITHUB**
+  
+
+PULLING AND REMOTES
+
+cd ../
+git clone https://github.com/Umuzi-org/tech-department
+cd tech-department
+git branch
+git log
+git branch -a
+git checkout -b project/git-basic-exercises
+git remote -v
+
+MULTIPLE REPOS
+git log
+cd ~/git-basic-exercises
+mkdir this-will-be-another-repo
+cd this-will-be-another-repo
+git init
+touch README.md
+git add README.md
+git commit -m "added readme file"
+cd ~/git-basic-exercises
+git log
+
+GITIGNORE
+touch ignore-me.db
+git status
+nano .gitignore
+ignore-me.db
+git status
+mkdir large-directory-that-should-be-local-only
+cd large-directory-that-should-be-local-only
+touch readme.md
+echo "you are awesome" > readme.md
+cd..
+git status
+nano .gitignore
+/large-directory-that-should-be-local-only
+git status
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
